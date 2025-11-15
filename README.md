@@ -1,8 +1,9 @@
 # Claude Code for Expo & Spring Boot
 
-Note: This fork is in beta. The changes from the original edmunds-claude-code plugin were done by AI and haven't been tested.
-
 A Claude Code configuration for productive full-stack development with Expo (React Native for web, Android, and iOS) and a Java 21 + Spring Boot backend. This plugin provides **12 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
+
+## Note
+This is a fork from the original edmunds-claude-code plugin. The changes in this fork are in beta; they were AI generated and haven't been tested.
 
 ## Quick Install
 
