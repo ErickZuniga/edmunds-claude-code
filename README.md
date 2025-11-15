@@ -1,6 +1,8 @@
-# Edmund's Claude Code Setup
+# Claude Code for Expo & Spring Boot
 
-My personal Claude Code configuration for productive web development. This plugin provides **14 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
+Note: This fork is in beta. The changes from the original edmunds-claude-code plugin were done by AI and haven't been tested.
+
+A Claude Code configuration for productive full-stack development with Expo (React Native for web, Android, and iOS) and a Java 21 + Spring Boot backend. This plugin provides **12 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
 
 ## Quick Install
 
@@ -32,13 +34,9 @@ My personal Claude Code configuration for productive web development. This plugi
 
 ### 🎨 UI Commands (2)
 
-- `/component-new` - Create React components
-- `/page-new` - Create Next.js pages
+- `/component-new` - Create Expo/React Native components
+- `/page-new` - Create Expo/React Native screens
 
-### 💾 Supabase Commands (2)
-
-- `/types-gen` - Generate TypeScript types
-- `/edge-function-new` - Create Edge Functions
 
 ### 🤖 Specialized AI Agents (11)
 
@@ -86,10 +84,10 @@ cd edmunds-claude-code
 
 ## Best For
 
-- Next.js developers
+- Expo / React Native developers
+- Java / Spring Boot developers
 - TypeScript projects
-- Supabase users
-- React developers
+- PostgreSQL users
 - Full-stack engineers
 
 ## Usage Examples
@@ -105,7 +103,7 @@ cd edmunds-claude-code
 
 ```bash
 /api-new
-# Claude will scaffold a complete API route with types, validation, and error handling
+# Claude will scaffold a complete Java/Spring Boot REST controller, service, and entity
 ```
 
 ### Research Tech Choices
@@ -121,14 +119,14 @@ The tech-stack-researcher agent automatically activates and provides detailed, r
 
 This setup emphasizes:
 - **Type Safety**: Never uses `any` types
-- **Best Practices**: Follows modern Next.js/React patterns
+- **Best Practices**: Follows modern Expo/React Native and Java/Spring Boot patterns
 - **Productivity**: Reduces repetitive scaffolding
 - **Research**: AI-powered tech decisions with evidence
 
 ## Requirements
 
 - Claude Code 2.0.13+
-- Works with any project (optimized for Next.js + Supabase)
+- Works with any project (optimized for Expo/React Native + Java/Spring Boot)
 
 ## Customization
 
@@ -148,7 +146,8 @@ MIT - Use freely in your projects
 ## Author
 
 Created by Edmund
+Fork by Erick
 
 ---
 
-**Note**: This is my personal setup that I've refined over time. Commands are optimized for Next.js + Supabase workflows but work great with any modern web stack.
+**Note**: This setup has been adapted for Expo/React Native and Java/Spring Boot workflows.

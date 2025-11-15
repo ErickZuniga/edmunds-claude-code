@@ -14,17 +14,16 @@ git push -u origin main
 
 # 3. Share with others
 # Installation commands:
-# /plugin marketplace add edmund-io/edmunds-claude-code
+# /plugin marketplace add ErickZuniga/edmunds-claude-code
 # /plugin install edmunds-claude-code
 ```
 
 ## What You Have
 
-✅ **14 Slash Commands**
+✅ **12 Slash Commands**
 - Development: `/new-task`, `/code-explain`, `/code-optimize`, `/code-cleanup`, `/feature-plan`, `/lint`, `/docs-generate`
 - API: `/api-new`, `/api-test`, `/api-protect`
 - UI: `/component-new`, `/page-new`
-- Supabase: `/types-gen`, `/edge-function-new`
 
 ✅ **11 AI Agents**
 - Architecture: tech-stack-researcher, system-architect, backend-architect, frontend-architect, requirements-analyst

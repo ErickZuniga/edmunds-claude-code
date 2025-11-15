@@ -4,18 +4,18 @@
     "name": "Edmund",
     "contact": "github.com/edmund-io"
   },
-  "description": "Edmund's curated Claude Code setup for productive development",
+  "description": "A curated Claude Code setup for productive development with Expo, React Native, Java, and Spring Boot.",
   "plugins": [
     {
       "name": "edmunds-claude-code",
       "source": "./",
-      "description": "Personal Claude Code configuration with 14 productivity commands and 11 specialized AI agents for modern web development",
+      "description": "Claude Code setup with productivity commands and specialized AI agents for Expo, React Native, Java, and Spring Boot development",
       "version": "1.0.0",
       "author": {
         "name": "Edmund",
         "email": "[email protected]"
       },
-      "tags": ["productivity", "nextjs", "supabase", "typescript", "react", "development"]
+      "tags": ["productivity", "expo", "react-native", "java", "spring-boot", "postgresql", "typescript", "development"]
     }
   ]
 }

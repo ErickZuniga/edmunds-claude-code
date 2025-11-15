@@ -1,7 +1,7 @@
 {
   "name": "edmunds-claude-code",
   "version": "1.0.0",
-  "description": "Edmund's personal Claude Code setup with 14 productivity commands and 11 specialized AI agents for modern web development",
+  "description": "Claude Code setup with productivity commands and specialized AI agents for Expo, React Native, Java, and Spring Boot development",
   "author": "Edmund",
   "license": "MIT",
   "commands": [
@@ -65,16 +65,6 @@
       "path": ".claude/commands/ui/page-new.md",
       "description": "Create new Next.js page"
     },
-    {
-      "name": "types-gen",
-      "path": ".claude/commands/supabase/types-gen.md",
-      "description": "Generate Supabase TypeScript types"
-    },
-    {
-      "name": "edge-function-new",
-      "path": ".claude/commands/supabase/edge-function-new.md",
-      "description": "Create new Supabase Edge Function"
-    }
   ],
   "agents": [
     {
@@ -144,18 +134,15 @@
       "args": ["@playwright/mcp@latest"],
       "description": "Browser automation and web testing capabilities"
     },
-    "supabase": {
-      "command": "npx",
-      "args": ["-y", "@supabase/mcp-server-supabase"],
-      "description": "Supabase database operations and management"
-    }
   },
   "tags": [
     "productivity",
-    "nextjs",
-    "supabase",
+    "expo",
+    "react-native",
+    "java",
+    "spring-boot",
+    "postgresql",
     "typescript",
-    "react",
     "api",
     "development",
     "mcp"

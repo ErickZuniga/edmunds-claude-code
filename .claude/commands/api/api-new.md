@@ -1,9 +1,9 @@
 ---
-description: Create a new Next.js API route with validation, error handling, and TypeScript
+description: Create a new Java/Spring Boot API endpoint with validation, error handling, and best practices
 model: claude-sonnet-4-5
 ---
 
-Create a new Next.js API route following modern best practices for solo developers.
+Create a new Java 21/Spring Boot API endpoint following modern best practices.
 
 ## Requirements
 
@@ -11,61 +11,70 @@ API Endpoint: $ARGUMENTS
 
 ## Implementation Guidelines
 
-### 1. **Next.js 15 App Router** (Recommended)
-Use Route Handlers in `app/api/` directory with TypeScript
+### 1. **Spring Boot 3+**
+- Use Spring Web for REST controllers.
+- Leverage dependency injection for services and repositories.
+- Use `application.properties` or `application.yml` for configuration.
 
 ### 2. **Validation**
-- Use Zod for runtime type validation
-- Validate input early (before DB/API calls)
-- Return clear validation error messages
+- Use **Jakarta Bean Validation** (`@Valid` annotation).
+- Create DTOs (Data Transfer Objects) for request bodies with validation annotations (`@NotNull`, `@Size`, etc.).
+- Return clear validation error messages (Spring's default handler is a good start).
 
 ### 3. **Error Handling**
-- Global error handling with try/catch
-- Consistent error response format
-- Appropriate HTTP status codes
-- Never expose sensitive error details
+- Use `@ControllerAdvice` for global exception handling.
+- Create custom exception classes for specific error scenarios.
+- Return a consistent error response format.
+- Use appropriate HTTP status codes.
 
-### 4. **TypeScript**
-- Strict typing for requests/responses
-- Shared type definitions
-- No `any` types
+### 4. **Java 21**
+- Use modern Java features like records for immutable DTOs.
+- Use the Stream API for data manipulation.
+- Follow standard Java naming conventions.
 
 ### 5. **Security**
-- Input sanitization
-- CORS configuration if needed
-- Rate limiting considerations
-- Authentication/authorization checks
+- Use **Spring Security** for authentication and authorization.
+- Secure endpoints with method-level security (`@PreAuthorize`) or security filter chains.
+- Protect against CSRF, XSS, and other common vulnerabilities.
 
 ### 6. **Response Format**
-```typescript
-// Success
-{ data: T, success: true }
 
-// Error
-{ error: string, details?: unknown, success: false }
+**Success**
+```json
+{
+  "data": { ... },
+  "success": true
+}
+```
+
+**Error**
+```json
+{
+  "error": "Error message",
+  "details": { ... },
+  "success": false
+}
 ```
 
 ## Code Structure
 
-Create a complete API route with:
+Generate the following components for a complete API endpoint:
 
-1. **Route Handler File** - `app/api/[route]/route.ts`
-2. **Validation Schema** - Zod schemas for request/response
-3. **Type Definitions** - Shared TypeScript types
-4. **Error Handler** - Centralized error handling
-5. **Example Usage** - Client-side fetch example
+1.  **Controller**: The `@RestController` class with endpoint mappings (`@GetMapping`, `@PostMapping`, etc.).
+2.  **Service**: The `@Service` class containing the business logic.
+3.  **Repository**: The Spring Data JPA `@Repository` interface for database operations.
+4.  **Entity**: The JPA `@Entity` class representing the database table.
+5.  **DTOs**: Java records for request and response objects with validation.
+6.  **Global Exception Handler**: A `@ControllerAdvice` class for handling exceptions.
+7.  **Example Usage**: A `curl` or Postman example for calling the new endpoint.
 
 ## Best Practices to Follow
 
--  Early validation before expensive operations
--  Proper HTTP status codes (200, 201, 400, 401, 404, 500)
--  Consistent error response format
--  TypeScript strict mode
--  Minimal logic in routes (use services/utils)
--  Environment variable validation
--  Request/response logging for debugging
-- L No sensitive data in responses
-- L No database queries without validation
-- L No inline business logic (extract to services)
+-   **Separation of Concerns**: Keep logic separated between controllers, services, and repositories.
+-   **Dependency Injection**: Use constructor injection.
+-   **DTO Pattern**: Use DTOs to decouple the API layer from the data layer.
+-   **Proper HTTP Status Codes**: Use meaningful status codes (200, 201, 400, 401, 404, 500).
+-   **Logging**: Use a logging framework like SLF4J for logging requests, errors, and important events.
+-   **Testing**: Include unit tests for the service layer and integration tests for the controller.
 
-Generate production-ready code that I can immediately use in my Next.js project.
+Generate production-ready code that I can immediately use in my Spring Boot project.

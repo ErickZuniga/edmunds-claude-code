@@ -16,7 +16,7 @@ Complete step-by-step instructions for publishing your Claude Code plugin to Git
 1. Go to https://github.com/new
 2. Fill in the details:
    - **Repository name**: `edmunds-claude-code`
-   - **Description**: "Edmund's personal Claude Code setup with 14 productivity commands and 11 specialized AI agents for modern web development"
+   - **Description**: "Claude Code setup with productivity commands and specialized AI agents for Expo, React Native, Java, and Spring Boot development"
    - **Visibility**: Public (so others can install it)
    - **Initialize**: ❌ Don't add README, .gitignore, or license (we already have these)
 3. Click "Create repository"
@@ -88,10 +88,10 @@ Share this command with others:
 {
   "name": "edmunds-claude-code",
   "source": "edmund-io/edmunds-claude-code",
-  "description": "Personal Claude Code configuration with 14 productivity commands and 11 specialized AI agents for modern web development",
+  "description": "Claude Code setup with productivity commands and specialized AI agents for Expo, React Native, Java, and Spring Boot development",
   "version": "1.0.0",
   "author": "Edmund",
-  "tags": ["productivity", "nextjs", "supabase", "typescript", "react", "development"]
+  "tags": ["productivity", "expo", "react-native", "java", "spring-boot", "postgresql", "typescript", "development"]
 }
 ```
 
@@ -107,7 +107,7 @@ Example post:
 ```
 🚀 Just published my Claude Code setup as a plugin!
 
-14 slash commands + 11 specialized AI agents for productive web development
+12 slash commands + 11 specialized AI agents for productive full-stack development
 
 Install with:
 /plugin install edmund-io/edmunds-claude-code
@@ -120,7 +120,7 @@ Features:
 ✅ Architecture agents
 ✅ Security & performance agents
 
-Perfect for Next.js, React, TypeScript, and Supabase projects!
+Perfect for Expo, React Native, Java, Spring Boot, and PostgreSQL projects!
 
 GitHub: https://github.com/edmund-io/edmunds-claude-code
 ```
@@ -181,7 +181,7 @@ Check:
 Check:
 - Agent file paths in `plugin.json` match actual file locations
 - Agent files have proper frontmatter with `name` and `description`
-- Agents activate based on context, not commands
+- Agents activate based on context, not comman
 
 ## Advanced: Creating Releases
 
