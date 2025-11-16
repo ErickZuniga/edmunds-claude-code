@@ -8,7 +8,7 @@
     {
       "name": "new-task",
       "path": ".claude/commands/new-task.md",
-      "description": "Analyze code for performance issues and suggest optimizations"
+      "description": "Analyze task complexity and create actionable implementation plan"
     },
     {
       "name": "code-explain",
@@ -58,13 +58,13 @@
     {
       "name": "component-new",
       "path": ".claude/commands/ui/component-new.md",
-      "description": "Create new React component"
+      "description": "Create new Expo/React Native component"
     },
     {
       "name": "page-new",
       "path": ".claude/commands/ui/page-new.md",
-      "description": "Create new Next.js page"
-    },
+      "description": "Create new Expo/React Native screen"
+    }
   ],
   "agents": [
     {
@@ -133,7 +133,7 @@
       "command": "npx",
       "args": ["@playwright/mcp@latest"],
       "description": "Browser automation and web testing capabilities"
-    },
+    }
   },
   "tags": [
     "productivity",

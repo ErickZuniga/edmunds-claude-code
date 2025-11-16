@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
 
 ### 6. **Styling**
 - Use **StyleSheet.create** for performance and organization.
-- Consider using a universal styling library like **Tamagui** or **NativeWind** for cross-platform consistency.
+- Consider using a universal styling library like **NativeWind** for cross-platform consistency.
 
 ### 7. **Data Fetching**
 - Use a modern data fetching library like **React Query** or **RTK Query**.
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
 
 1.  **Screen File**: The main screen component with TypeScript.
 2.  **Navigation Types**: (If applicable) Type definitions for the screen's navigation props.
-3.  **Styles**: Styles defined using `StyleSheet.create`.
+3.  **Styles**: Styles defined using `StyleSheet.create` or a universal styling library like NativeWind.
 4.  **Example Usage**: How to integrate the screen into a navigator.
 
 ## Code Quality Standards
