@@ -137,10 +137,12 @@
   },
   "tags": [
     "productivity",
-    "nextjs",
-    "supabase",
+    "expo",
+    "react-native",
+    "java",
+    "spring-boot",
+    "postgresql",
     "typescript",
-    "react",
     "api",
     "development",
     "mcp"
